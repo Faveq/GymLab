@@ -1,0 +1,39 @@
+.NavProfileContainer {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  justify-content: space-around;
+}
+.profileIcon {
+  color: var(--secondaryColor);
+  transform: scale(1.8);
+  cursor: pointer;
+  transition: all 1s;
+}
+.profileIcon:hover {
+  color: var(--primaryColor);
+}
+.navJoinContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 5px;
+  width: 65%;
+  height: 100%;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 15px;
+}
+.navJoinHeading { 
+  color: var(--secondaryColor);
+}
+.navJoinButton {
+  border-radius: 15px;
+  background-color: var(--primaryColor);
+  border: none;
+  aspect-ratio: 1/1;
+}
+.navJoinButton:hover {
+  aspect-ratio: 0;
+}

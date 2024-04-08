@@ -1,21 +1,36 @@
 html{
   height: 3000px;
-  width: min-content;
 }
-
 nav{
   display: flex;
   position: fixed;
+  align-items: center;
+  padding: 5px;
   top: 0px;
   width: 100%;
   justify-content: space-around;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  background: #1d1d1d;
+  background: #090909;
 }
 nav a{
   text-decoration: none;
 }
+nav h2:hover{
+  color: var(--primaryColor);
+}
 nav h2{
-  
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.logoContainer{
+  width: 25% !important;
+}
+.logoImage{
+  aspect-ratio: 1/1;
+  width: 128px;
+}
+.navLinks{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60% !important;
 }

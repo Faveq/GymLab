@@ -14,13 +14,14 @@ nav{
 nav a{
   text-decoration: none;
 }
-nav h2:hover{
-  color: var(--primaryColor);
-}
 nav h2{
   color: var(--secondaryColor);
+  transition: all .2s ease;
   font-weight: 600;
   font-size: 1.3em;
+}
+nav h2:hover{
+  color: var(--primaryColor);
 }
 .logoContainer{
   width: 25% !important;
@@ -33,4 +34,26 @@ nav h2{
   display: flex;
   justify-content: space-evenly;
   width: 60% !important;
+}
+.menuButton{
+  color: var(--secondaryColor);
+  padding: 0%;
+  transform: scale(1.8);
+  transition: all .3s ease;
+  display: none !important;
+}
+.menuButton:hover{
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .navLinks > *{
+    display: none;
+    width: 40% !important;
+  }
+  .menuButton{
+  display: inline-block !important;
+  }
 }

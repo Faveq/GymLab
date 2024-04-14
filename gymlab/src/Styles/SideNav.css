@@ -1,0 +1,40 @@
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    position: fixed;
+    background-color: var(--secondaryColor);
+    height: 100%;
+    width: 0%;
+    top: 0%;
+    left: 0%;
+    transition: all .4s ease;
+}
+.sideNav > *{
+    text-decoration: none;
+    transition: all .2s ease;
+    color: var(--thirdColor);
+}
+.sideNav > *:hover{
+    color: var(--primaryColor);
+    transform: scale(1.01);
+}
+.slide{
+    width: 100%;
+}
+.closeButton{
+    position: absolute;
+    color: var(--primaryColor);
+    transform: scale(1.8);
+    top: 10%;
+    right: 10%;
+    transition: all .2s ease-out;
+}
+.closeButton:hover{
+    cursor: pointer;
+    transform: scale(2.3) rotate(90deg);
+
+}

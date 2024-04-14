@@ -3,12 +3,13 @@
   align-items: center;
   width: 15%;
   justify-content: space-around;
+  gap: 10px;
 }
 .profileIcon {
+  transition: all 1s ease;
   color: var(--secondaryColor);
   transform: scale(1.8);
   cursor: pointer;
-  transition: all 1s;
 }
 .profileIcon:hover {
   color: var(--primaryColor);
@@ -16,24 +17,62 @@
 .navJoinContainer {
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   align-items: center;
   padding-left: 5px;
   padding-right: 5px;
+ 
   gap: 5px;
   width: 65%;
   height: 100%;
   border: 1px solid var(--secondaryColor);
   border-radius: 15px;
+  transition: all .2s ease;
 }
 .navJoinHeading { 
   color: var(--secondaryColor);
+  transition: all .2s ease;
 }
 .navJoinButton {
+  cursor: pointer;
+  position: relative;
   border-radius: 15px;
   background-color: var(--primaryColor);
   border: none;
   aspect-ratio: 1/1;
+  transition: all 0.3s ease;
 }
-.navJoinButton:hover {
-  aspect-ratio: 0;
+.navJoinButton::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  border-radius: 75%;
+  width: 5%;
+  height: 10px;
+  background-color: var(--primaryColor);
+  transition: all .3s ease;
+}
+.navJoinButton:hover::after{
+  transform: scale(3);
+  width: 1000px;
+  height: 1000px;
+  background-color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 1200px) {
+  .navJoinHeading { 
+    display: none;
+  }
+  .navJoinContainer {
+    padding: 10px;
+    width: auto;
+  }
+  .NavProfileContainer {
+    width: auto;
+    gap: 25px;
+    margin-right: 20px;
+  }
 }

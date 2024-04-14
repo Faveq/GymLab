@@ -25,6 +25,9 @@
 .slide{
     width: 100%;
 }
+.sideNav .active h2{
+    color: var(--primaryColor) !important;
+  }
 .closeButton{
     position: absolute;
     color: var(--primaryColor);

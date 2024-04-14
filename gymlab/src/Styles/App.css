@@ -9,7 +9,7 @@ nav{
   top: 0px;
   width: 100%;
   justify-content: space-around;
-  background: #090909;
+  background: var(--thirdColor);
 }
 nav a{
   text-decoration: none;
@@ -46,7 +46,9 @@ nav h2:hover{
   cursor: pointer;
   color: var(--primaryColor);
 }
-
+.navLinks .active h2{
+  color: var(--primaryColor) !important;
+}
 
 @media only screen and (max-width: 1100px) {
   .navLinks > *{

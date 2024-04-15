@@ -1,5 +1,5 @@
 import MainPage from "../Pages/HomePage";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import MembershipPage from "../Pages/MembershipPage";
 import TrainersPage from "../Pages/TrainersPage";
 import AboutPage from "../Pages/AboutPage";
@@ -11,15 +11,33 @@ import SideNav from "./SideNav";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(false);
-
+  const navigationRef = useRef(null);
+  
   const toggleSideNav = () => {
     setShowSideNav(!showSideNav);
   };
 
+  const fadingNavAfterScroll = () =>{
+    var scrollPosition = window.scrollY;
+    var opacity = 1
+    
+    if ((100 - scrollPosition/10)/100 > .8) {
+      opacity = (100 - scrollPosition/10)/100;
+      navigationRef.current.style.opacity = opacity
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", fadingNavAfterScroll);
+    return () => {
+    window.removeEventListener("scroll", fadingNavAfterScroll)  
+    };
+  }, []);
+
   return (
-    <div className="App">
+    <div className="App" style={{ opacity: 1 }}>
       <Router>
-        <nav>
+        <nav ref={navigationRef}>
           <Link to="/">
             <div className="logoContainer">
               <img

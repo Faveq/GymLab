@@ -1,0 +1,39 @@
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondaryColor);
+  background-color: var(--thirdColorLowOpacity);
+  padding: 95px 55px 80px 50px;
+  margin-right: 20%;
+  overflow: visible;
+  border-radius: 20px;
+  backdrop-filter: blur(1px);
+  clip-path: polygon(39% 12%, 64% 28%, 100% 18%, 88% 69%, 0 98%, 5% 25%);
+    
+  h3 {
+    background-size: 86% 100%;
+    background-repeat: no-repeat;
+    background-position: -10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 1.2em;
+    color: var(--thirdColor);
+  }
+  h2 {
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  h1 {
+    font-weight: 800;
+    margin: 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .quoteContainer {
+    margin-right: 0%;
+    h3 {
+      font-size: 1.1em;
+    }
+  }
+}

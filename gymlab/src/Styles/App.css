@@ -8,7 +8,9 @@ nav{
   opacity: 1;
   padding: 5px;
   top: 0px;
+  height: 93px;
   width: 100%;
+  z-index: 999;
   justify-content: space-around;
   background: var(--thirdColor);
 }
@@ -29,7 +31,7 @@ nav h2:hover{
 }
 .logoImage{
   aspect-ratio: 1/1;
-  width: 128px;
+  width: 90px;
 }
 .navLinks{
   display: flex;

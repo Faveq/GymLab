@@ -2,3 +2,15 @@
     width: 100vw;
     height: 100vh;
 }
+.tiles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+@media only screen and (max-width: 870px) {
+    .tiles{
+        flex-direction: column;
+    }
+}

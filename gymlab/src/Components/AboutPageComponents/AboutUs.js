@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Styles/AboutUsPageStyles/AboutUs.css";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -11,7 +12,7 @@ const AboutUs = () => {
           alongside the pursuit of strength and health throughout history. We're
           here to empower you on your fitness journey, providing a supportive
           environment where you can surpass your limits and embrace a healthier
-          lifestyle. Join us and redefine your fitness journey today!
+          lifestyle. <Link to="/membership" className="joinUsLink">Join us</Link> and redefine your fitness journey today!
         </p>
         <div  className="imageContainer">
         <img

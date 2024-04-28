@@ -1,40 +1,135 @@
-.tile{
+h2 {
+  text-align: center;
+  margin: 15px;
+}
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+/**Tiles under the banner**/
+.tiles {
+  .tile {
     position: relative;
     background-color: var(--secondaryColor);
     color: var(--thirdColor);
     padding: 77px;
-    clip-path: polygon(52% 19%, 91% 4%, 100% 60%, 75% 86%, 36% 80%, 5% 69%, 18% 14%);
+    clip-path: polygon(
+      52% 19%,
+      91% 4%,
+      100% 60%,
+      75% 86%,
+      36% 80%,
+      5% 69%,
+      18% 14%
+    );
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
-
-    h2{
-        text-align: center; 
-        margin: 15px;
+    .icon-container > * {
+      color: var(--primaryColor);
+      transform: scale(1.9);
+      margin: none;
     }
-    p{
-        font-size: 1.2em;
-        text-align: center;        
-    }
-    .icon-container > *{
-        color: var(--primaryColor);
-        transform: scale(1.9);
-        margin: none;
-    }
-}
-.tile:hover{
+  }
+  .tile:hover {
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
 
-    .icon-container > *{
-        color: var(--thirdColor);
+    .icon-container > * {
+      color: var(--thirdColor);
+    }
+  }
+
+  .tile > * {
+    margin: 0;
+  }
+}
+
+/**Featured classes tiles**/
+.featuredClassesContainer {
+  .tile {
+    all: inherit;
+    backdrop-filter: blur(1px);
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: space-around;
+    background-position: center;
+    height: 400px;
+    transition: all 0.5s ease;
+    background-size: 380px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    
+
+    h2 {
+      background: var(--thirdColorLowOpacity);
+      backdrop-filter: blur(3px);
+    }
+
+    p {
+      background-color: var(--thirdColorLowOpacity);
+      backdrop-filter: blur(1px);
+    }
+    p::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      background-color: var(--primaryColor);
+      transition: all 0.2s ease;
+      z-index: -1;
+    }
+
+    .icon-container {
+      all: initial;
+      position: absolute;
+      padding: 16px;
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      border-radius: 50px 0px 0px 50px;
+      background-color: var(--secondaryColor);
+      color: var(--thirdColor) !important;
+      top: 0px;
+      right: 0px;
+    }
+  }
+  .tile:nth-child(2) {
+    background-size: 800px !important;
+  }
+  .tile:hover {
+    cursor: pointer;
+    background-size: 120% !important;
+
+    .icon-container {
+      color: var(--primaryColor) !important;
+    }
+    p::before {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .tile {
+        background-size: 950px;
+        align-items: center;
+        text-align: center;
+        h2{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    .tile:hover {
+        background-size: 1000px !important;
     }
 }
 
-.tile > *{
-    margin: 0;
 }

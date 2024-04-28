@@ -6,6 +6,8 @@ import PersonPinIcon from '@mui/icons-material/PersonPin';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DiscountIcon from '@mui/icons-material/Discount';
 import AboutUs from "../Components/AboutPageComponents/AboutUs.js";
+import PartnersSection from "../Components/HomePageComponents/PartnersSection.js";
+import FeaturedClasses from "../Components/HomePageComponents/FeaturedClasses.js";
 
 const HomePage = () => {
   return (
@@ -17,6 +19,8 @@ const HomePage = () => {
         <Tile icon={<DiscountIcon/>} title="Prices" description="Most competitive prices"/>
       </div>
       <AboutUs/>
+      <PartnersSection/>
+      <FeaturedClasses/>
 
     </div>
   );

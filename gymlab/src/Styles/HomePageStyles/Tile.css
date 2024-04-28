@@ -64,7 +64,6 @@ p {
     transition: all 0.5s ease;
     background-size: 380px;
     position: relative;
-    backdrop-filter: blur(10px);
     
 
     h2 {

@@ -1,0 +1,57 @@
+.trainerCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .trainerCardBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--fourthColor);
+        width: 100%;
+        padding: 2px;
+        background-color: whitesmoke;
+    }
+
+    .trainerPhoto{
+        aspect-ratio: auto;
+        width: 200px;
+        background-size: cover;
+        filter: saturate(0);
+        transition: all .3s ease;
+    }
+    .trainerPhoto:hover {
+        filter: saturate(1);
+        cursor: pointer;
+    }
+    h2{
+        color: var(--primaryColor);
+        font-weight: 500;
+        margin: 2px;
+    }
+    p{
+        margin: 5px;
+        font-size: 1em;
+    }
+
+    .mediaLinks{
+        display: flex;
+        justify-content: space-evenly;
+        gap:  8px;
+        scale: .85;
+        align-items: center;
+        color: var(--fourthColor);
+        transition: all .2s ease;
+    }
+    .mediaLinks > *:hover{
+        cursor: pointer;
+        color: var(--primaryColor);
+
+        .trainerCardBody{
+            border-color: var(--primaryColor);
+        }
+    }
+}
+

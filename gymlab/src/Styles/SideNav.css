@@ -40,5 +40,4 @@
 .closeButton:hover{
     cursor: pointer;
     transform: scale(2.3) rotate(90deg);
-
 }

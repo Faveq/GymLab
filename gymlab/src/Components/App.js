@@ -1,7 +1,6 @@
 import MainPage from "../Pages/HomePage";
 import { useState, useEffect, useRef } from "react";
 import MembershipPage from "../Pages/MembershipPage";
-import TrainersPage from "../Pages/TrainersPage";
 import AboutPage from "../Pages/AboutPage";
 import "../Styles/App.css";
 import { BrowserRouter as Router, Route, Link,NavLink, Routes } from "react-router-dom";
@@ -43,6 +42,7 @@ function App() {
               <img
                 className="logoImage"
                 src={process.env.PUBLIC_URL + "/Images/logo.png"}
+                alt="Logo"
               />
             </div>
           </Link>
@@ -59,9 +59,6 @@ function App() {
             <NavLink to="/about" activeClassName="active">
               <h2>About</h2>
             </NavLink>
-            <NavLink to="/trainers" activeClassName="active">
-              <h2>Trainers</h2>
-            </NavLink>
             <NavLink to="/contact" activeClassName="active">
               <h2>Contact</h2>
             </NavLink>
@@ -74,7 +71,6 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/membership" element={<MembershipPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/trainers" element={<TrainersPage />} />
         </Routes>
       </Router>
     </div>

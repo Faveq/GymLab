@@ -1,5 +1,5 @@
 html{
-  height: 4000px;
+  height: 8000px;
 }
 nav{
   display: flex;
@@ -57,6 +57,7 @@ nav h2:hover{
   color: var(--thirdColor);
   mix-blend-mode: difference;
   margin: 0%;
+  font-size: 1.5em;
 }
 .sectionHeading::after{
   position: absolute;

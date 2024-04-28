@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/SideNav.css";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -19,9 +19,6 @@ const SideNav = (props) => {
             </NavLink>
             <NavLink to="/about" activeClassName="active" onClick={toggleSideNav}>
               <h2>About</h2>
-            </NavLink>
-            <NavLink to="/trainers" activeClassName="active" onClick={toggleSideNav}>
-              <h2>Trainers</h2>
             </NavLink>
             <NavLink to="/contact" activeClassName="active" onClick={toggleSideNav}>
               <h2>Contact</h2>

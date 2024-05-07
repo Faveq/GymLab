@@ -9,6 +9,7 @@ import AboutUs from "../Components/AboutPageComponents/AboutUs.js";
 import PartnersSection from "../Components/HomePageComponents/PartnersSection.js";
 import FeaturedClasses from "../Components/HomePageComponents/FeaturedClasses.js";
 import Trainers from "../Components/HomePageComponents/Trainers.js";
+import Bmi from "../Components/HomePageComponents/Bmi.js";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       <PartnersSection/>
       <FeaturedClasses/>
       <Trainers/>
+      <Bmi/>
     </div>
   );
 };

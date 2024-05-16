@@ -1,0 +1,106 @@
+footer{
+    display: flex;
+    background-color: var(--thirdColor);
+    margin: 0%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: var(--secondaryColor);
+}
+.privacyPolicyContainer{
+    width: 50%;
+    img{
+        width: 100px;
+    }
+    p{
+        text-align: left;
+        width: 75%;
+        margin: 5px;
+        font-size: 1em;
+        font-weight: 200;
+    }
+    .socials{
+        margin-top: 13px;
+        margin-bottom: 13px;
+        display: flex;
+        width: 30%;
+        scale: .9;
+        justify-content: space-between;
+    }
+    .socials > *:hover{
+        color: var(--primaryColor);
+        cursor: pointer;
+    }
+}
+.generalInfoContainer{
+    width: 50%;
+    display: flex;
+    gap: 5vw;
+    h2{
+        margin: 3px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    h2::after{
+        content: "";
+        position: absolute;
+        background-color: var(--primaryColor);
+        width: 30%;
+        height: 4px;
+        bottom: -2px;
+        left: 0%;
+        
+    }
+    h3{
+        margin: 3px;
+    }
+    p{
+        text-align: left;
+        margin: 3px;
+        font-size: 1.1em;
+        font-weight: 200;
+    }
+    .classesContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .classesContainer > *:is(p){
+        cursor: pointer;
+    }
+    .workingHours{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .footer>*{
+        width: 100%;
+    }
+    .privacyPolicyContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+    .generalInfoContainer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .classesContainer{
+        align-items: center;
+    }
+
+}

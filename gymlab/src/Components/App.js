@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Link,NavLink, Routes } from "react-rout
 import NavProfile from "./NavProfile";
 import MenuIcon from "@mui/icons-material/Menu";
 import SideNav from "./SideNav";
+import Footer from "./Footer";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(false);
@@ -65,13 +66,15 @@ function App() {
             <MenuIcon className="menuButton" onClick={() => toggleSideNav()} />
           </div>
           <NavProfile />
-        </nav>
-        <SideNav toggleSideNav={toggleSideNav} showSideNav={showSideNav} />
+        </nav> 
+      <SideNav toggleSideNav={toggleSideNav} showSideNav={showSideNav} />
+
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/membership" element={<MembershipPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+      <Footer/>
       </Router>
     </div>
   );

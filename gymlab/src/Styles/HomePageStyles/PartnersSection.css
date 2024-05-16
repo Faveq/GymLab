@@ -3,7 +3,6 @@
     background-color: var(--thirdColor);
     display: flex;
     justify-content: space-around;
-    margin-top: 35px;
 }
 .partnerLogo{
     aspect-ratio: 1/1;

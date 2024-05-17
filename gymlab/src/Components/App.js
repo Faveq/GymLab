@@ -50,19 +50,19 @@ function App() {
             </div>
           </Link>
           <div className="navLinks">
-            <NavLink exact to="/" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink exact to="/GymLab" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Home</h2>
             </NavLink>
-            <NavLink to="/schedule" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink to="/GymLab/schedule" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Schedule</h2>
             </NavLink>
-            <NavLink to="/membership" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink to="/GymLab/membership" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Membership</h2>
             </NavLink>
-            <NavLink to="/about" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink to="/GymLab/about" className={(navData) => navData.isActive ? "active" : null }>
               <h2>About</h2>
             </NavLink>
-            <NavLink to="/contact" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink to="/GymLab/contact" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Contact</h2>
             </NavLink>
             <MenuIcon className="menuButton" onClick={() => toggleSideNav()} />
@@ -72,11 +72,11 @@ function App() {
       <SideNav toggleSideNav={toggleSideNav} showSideNav={showSideNav} />
 
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/schedule" element={<SchedulePage />} />
-          <Route path="/membership" element={<MembershipPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/GymLab" element={<MainPage />} />
+          <Route path="/GymLab/schedule" element={<SchedulePage />} />
+          <Route path="/GymLab/membership" element={<MembershipPage />} />
+          <Route path="/GymLab/about" element={<AboutPage />} />
+          <Route path="/GymLab/contact" element={<ContactPage />} />
         </Routes>
       <Footer/>
       </Router>

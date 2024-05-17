@@ -1,9 +1,10 @@
 import React from "react";
+import SmallBanner from "../Components/SmallBanner";
 
 const AboutPage = () => {
   return (
     <div>
-      <h1>About</h1>
+      <SmallBanner/>
     </div>
   );
 };

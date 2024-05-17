@@ -1,0 +1,27 @@
+.pill{
+    padding: 8px 12px 8px 12px;
+    border-radius: 20px;
+    border: 1px;
+    border-color: var(--fourthColor);
+    outline: none;
+    border-style: solid;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.pill[name="selected"]{
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+.pill[name="joinNow"]{
+    font-size: 1em;
+    padding: 8px 13px 8px 13px;
+    background: var(--fourthColor);
+    color: white;
+    border: none;
+    transition: all .4s ease;
+}
+.pill[name="joinNow"]:hover{
+    background-color: var(--primaryColor);
+}

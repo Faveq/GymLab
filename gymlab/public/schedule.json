@@ -1,0 +1,29 @@
+{
+  "Monday": [
+    ["Cycling", "6:00am - 8:00am", "Simon Perkins"],
+    ["Swimming", "12:00am - 2:00pm", "Edward Stephens"],
+    ["Climbing", "6:00pm - 9:00pm", "Amelia Steele"],
+    ["Gym", "7:00pm - 9:00pm", "Sophia Johnson"]
+  ],
+  "Tuesday": [
+    ["Yoga", "7:00am - 8:30am", "Emily Thompson"],
+    ["Running", "5:00pm - 6:00pm", "Michael Davis"]
+  
+  ],
+  "Wednesday": [
+    ["Pilates", "6:30am - 7:30am", "William Brown"],
+    ["Swimming", "12:00pm - 1:00pm", "James Wilson"],
+    ["Climbing", "6:00pm - 8:00pm", "Emma Taylor"]
+  ],
+  "Thursday": [
+    ["Cycling", "6:30am - 8:00am", "Liam Smith"],
+    ["Dancing", "3:00pm - 5:00pm", "Olivia White"],
+    ["Gym", "7:00pm - 9:00pm", "Benjamin Johnson"],
+    ["Swimming", "12:00pm - 1:00pm", "James Wilson"]
+  ],
+  "Friday": [
+    ["Running", "6:00am - 7:00am", "Emily Thompson"],
+    ["Yoga", "12:00pm - 1:00pm", "Michael Davis"],
+    ["Climbing", "6:00pm - 8:00pm", "Sophia Johnson"]
+  ]
+}

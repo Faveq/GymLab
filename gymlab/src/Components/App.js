@@ -40,7 +40,7 @@ function App() {
     <div className="App" style={{ opacity: 1 }}>
       <Router>
         <nav ref={navigationRef}>
-          <Link to="/">
+          <Link to="/GymLab/">
             <div className="logoContainer">
               <img
                 className="logoImage"

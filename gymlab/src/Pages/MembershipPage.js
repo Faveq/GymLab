@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SmallBanner from "../Components/SmallBanner";
 import "../Styles/MembershipPageStyles/MembershipPage.css";
 import Card from "../Components/MembershipPageComponents/Card";
 
+
+
+
 const MembershipPage = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="membershipPage">
       <SmallBanner title="Membership" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/HomePageStyles/HomePage.css";
 import BannerSection from "../Components/HomePageComponents/BannerSection.js";
 import Tile from "../Components/HomePageComponents/Tile.js";
@@ -12,6 +12,9 @@ import Trainers from "../Components/HomePageComponents/Trainers.js";
 import Bmi from "../Components/HomePageComponents/Bmi.js";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="homePageContent">
       <BannerSection />

@@ -4,7 +4,12 @@ import Pill from "../Components/SchedulePageComponents/Pill";
 import "../Styles/SchedulePageStyles/SchedulePage.css";
 
 const SchedulePage = () => {
-  const days = [
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
+const days = [
     "Monday",
     "Tuesday",
     "Wednesday",

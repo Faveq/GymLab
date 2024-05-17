@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.contactPageContent {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 80px;
+  align-items: start;
+  gap: 50px;
+  h2 {
+    margin: 0px;
+    position: relative;
+  }
+}
+
+.leftSection {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+
+
+  p {
+    text-align: left;
+  }
+
+  .socials {
+    display: flex;
+    gap: 15px;
+  }
+  .socials > *:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+}
+
+.details {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+
+  p,
+  h4 {
+    margin: 2px;
+    font-size: 1em;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  .detailsSubDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    width: 100%;
+
+    .detailsHeading {
+      position: relative;
+      font-size: 1.1em;
+    }
+
+    .detailsHeading::after {
+      position: absolute;
+      content: "";
+      width: 30%;
+      height: 3px;
+      bottom: -2px;
+      left: 0px;
+      background-color: var(--primaryColor);
+    }
+  }
+}
+.rightSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  
+    h2::after{
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 3px;
+      bottom: 0%;
+      left: 0%;
+      background-color: var(--primaryColor);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        width: 100%;
+        margin-top: 15px;
+
+        input{
+            position: relative;
+            border: 1px solid var(--fifthColor);
+            width: 100% !important;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 10px;
+            resize: vertical;
+            font-size: .9em;
+            outline: none;
+        }
+        input::placeholder{
+            font-weight: 300;
+            font-size: 1em;
+            color: var(--fourthColor);
+            opacity: .75;
+        }
+        textarea::after{
+            position: absolute;
+            content: "";
+            width: 30%;
+            height: 3px;
+            bottom: -2px;
+            left: 0px;
+            background-color: var(--primaryColor);
+        }
+
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .contactPageContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .rightSection, .leftSection  {
+    width: 100%;
+    }
+  }
+  

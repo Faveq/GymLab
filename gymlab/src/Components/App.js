@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SideNav from "./SideNav";
 import Footer from "./Footer";
 import SchedulePage from "../Pages/SchedulePage";
+import ContactPage from "../Pages/ContactPage";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(false);
@@ -75,6 +76,7 @@ function App() {
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/membership" element={<MembershipPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       <Footer/>
       </Router>

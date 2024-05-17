@@ -50,7 +50,7 @@ function App() {
             </div>
           </Link>
           <div className="navLinks">
-            <NavLink exact to="/GymLab" className={(navData) => navData.isActive ? "active" : null }>
+            <NavLink exact to="/GymLab/" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Home</h2>
             </NavLink>
             <NavLink to="/GymLab/schedule" className={(navData) => navData.isActive ? "active" : null }>
@@ -72,7 +72,7 @@ function App() {
       <SideNav toggleSideNav={toggleSideNav} showSideNav={showSideNav} />
 
         <Routes>
-          <Route path="/GymLab" element={<MainPage />} />
+          <Route path="/GymLab/" element={<MainPage />} />
           <Route path="/GymLab/schedule" element={<SchedulePage />} />
           <Route path="/GymLab/membership" element={<MembershipPage />} />
           <Route path="/GymLab/about" element={<AboutPage />} />

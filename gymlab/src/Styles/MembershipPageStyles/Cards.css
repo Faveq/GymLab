@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33%;
+  position: relative;
+  -webkit-box-shadow: 20px 22px 22px -23px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 20px 22px 22px -23px rgba(66, 68, 90, 1);
+  box-shadow: 20px 22px 22px -23px rgba(66, 68, 90, 1);
+  img {
+    width: 100%;
+    filter: saturate(0);
+    transition: all 0.3s ease;
+  }
+  img:hover {
+    filter: saturate(1);
+  }
+  img:hover > .heading {
+      color: var(--primaryColor);
+  }
+}
+.cardBody {
+  display: flex;
+  z-index: 100;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border: none;
+  width: 70%;
+  height: 30%;
+  top: -30px;
+  position: relative;
+  text-align: center;
+
+  .heading {
+  }
+  .price::before {
+    content: "$";
+    position: relative;
+    top: -6px;
+    color: var(--fourthColor);
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+  .price {
+    margin: 0px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 2.5em;
+  }
+  .price::after {
+    content: "p/m";
+    position: relative;
+    margin-left: 3px;
+    bottom: 5px;
+    color: var(--fourthColor);
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+  p {
+    margin: 7px;
+    font-weight: 300;
+  }
+}
+.joinBtn{
+    border: 1px solid var(--primaryColor);
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: 
+    0.3em 0.3em 0 0 var(--primaryColor),
+    inset 0.3em 0.3em 0 0 var(--primaryColor);
+  
+}
+.joinBtn:hover {
+box-shadow: 
+  0 0 0 0 var(--primaryColor),
+  inset 6em 3.5em 0 0 var(--primaryColor);
+}
+@media only screen and (max-width: 950px) {
+    .card{
+        width: 50%;
+
+    }
+}
+@media only screen and (max-width: 700px) {
+    .card{
+        width: 90%;
+
+    }
+}

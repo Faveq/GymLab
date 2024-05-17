@@ -1,0 +1,24 @@
+.membershipPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainingPlans{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5vw;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+@media only screen and (max-width: 950px) {
+    .trainingPlans{
+        flex-direction: column;
+        align-items: center;
+    }
+}

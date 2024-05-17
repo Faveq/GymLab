@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GymLab/static/css/main.59d17696.css",
-    "main.js": "/GymLab/static/js/main.e18530b1.js",
-    "static/js/453.a47c0bc3.chunk.js": "/GymLab/static/js/453.a47c0bc3.chunk.js",
-    "index.html": "/GymLab/index.html",
-    "main.59d17696.css.map": "/GymLab/static/css/main.59d17696.css.map",
-    "main.e18530b1.js.map": "/GymLab/static/js/main.e18530b1.js.map",
-    "453.a47c0bc3.chunk.js.map": "/GymLab/static/js/453.a47c0bc3.chunk.js.map"
+    "main.css": "/static/css/main.59d17696.css",
+    "main.js": "/static/js/main.d9cfecb9.js",
+    "static/js/453.a47c0bc3.chunk.js": "/static/js/453.a47c0bc3.chunk.js",
+    "index.html": "/index.html",
+    "main.59d17696.css.map": "/static/css/main.59d17696.css.map",
+    "main.d9cfecb9.js.map": "/static/js/main.d9cfecb9.js.map",
+    "453.a47c0bc3.chunk.js.map": "/static/js/453.a47c0bc3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59d17696.css",
-    "static/js/main.e18530b1.js"
+    "static/js/main.d9cfecb9.js"
   ]
 }

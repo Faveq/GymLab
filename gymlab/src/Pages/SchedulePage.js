@@ -65,13 +65,13 @@ const days = [
           {schedule[selectedDay] ? (
             schedule[selectedDay].map((activity, index) => (
               <div className="activityItem">
-                <div className="activityName" key={Math.random()}>
+                <div className="activityName" key={Math.random(1, 10000)}>
                   {activity[0]}
                 </div>
-                <div className="activityHours" key={Math.random()}>
+                <div className="activityHours" key={Math.random(1, 10000)}>
                   {activity[1]}
                 </div>
-                <div className="activityTrainer" key={Math.random()}>
+                <div className="activityTrainer" key={Math.random(1, 10000)}>
                   {activity[2]}
                 </div>
                 <Pill className="joinNowBtn" name="joinNow" content="Join Now"/>

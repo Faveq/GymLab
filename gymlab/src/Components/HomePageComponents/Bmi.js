@@ -19,7 +19,7 @@ const Bmi = () => {
         Math.round((parseInt(weight) / (heightMeters * heightMeters)) * 10) /
         10;
       setBmi(bmi);
-      if (bmi !== NaN && bmi !== Infinity && bmi !== 0) {
+      if (!isNaN(bmi) && bmi !== Infinity && bmi !== 0) {
         if (bmi < 18.5) {
           bmiRef.current.innerText = "Underweight";
         } else if (bmi >= 18.5 && bmi < 24.9) {

@@ -50,19 +50,19 @@ function App() {
             </div>
           </Link>
           <div className="navLinks">
-            <NavLink exact to="/" activeClassName="active">
+            <NavLink exact to="/" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Home</h2>
             </NavLink>
-            <NavLink to="/schedule" activeClassName="active">
+            <NavLink to="/schedule" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Schedule</h2>
             </NavLink>
-            <NavLink to="/membership" activeClassName="active">
+            <NavLink to="/membership" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Membership</h2>
             </NavLink>
-            <NavLink to="/about" activeClassName="active">
+            <NavLink to="/about" className={(navData) => navData.isActive ? "active" : null }>
               <h2>About</h2>
             </NavLink>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink to="/contact" className={(navData) => navData.isActive ? "active" : null }>
               <h2>Contact</h2>
             </NavLink>
             <MenuIcon className="menuButton" onClick={() => toggleSideNav()} />

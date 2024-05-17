@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GymLab/static/css/main.59d17696.css",
-    "main.js": "/GymLab/static/js/main.a29d844c.js",
+    "main.js": "/GymLab/static/js/main.250349ed.js",
     "static/js/453.a47c0bc3.chunk.js": "/GymLab/static/js/453.a47c0bc3.chunk.js",
     "index.html": "/GymLab/index.html",
     "main.59d17696.css.map": "/GymLab/static/css/main.59d17696.css.map",
-    "main.a29d844c.js.map": "/GymLab/static/js/main.a29d844c.js.map",
+    "main.250349ed.js.map": "/GymLab/static/js/main.250349ed.js.map",
     "453.a47c0bc3.chunk.js.map": "/GymLab/static/js/453.a47c0bc3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59d17696.css",
-    "static/js/main.a29d844c.js"
+    "static/js/main.250349ed.js"
   ]
 }

@@ -73,7 +73,7 @@ const SchedulePage = () => {
               </div>
             ))
           ) : (
-            <div className="infoContainer">No activities for {selectedDay}</div>
+            <div className="infoContainer">Nothing planned for {selectedDay}</div>
           )}
         </div>
       ) : (

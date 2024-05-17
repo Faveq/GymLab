@@ -1,24 +1,38 @@
-.membershipPage{
+.membershipPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 80px;
+}
+.introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.trainingPlans{
-    display: flex;
     justify-content: center;
-    align-items: start;
-    gap: 5vw;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 50%;
+    text-align: center;
+    .sectionHeading{
+        margin-bottom:13px ;
+    }
 
+}
+.trainingPlans {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5vw;
+  margin-bottom: 150px;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 
 @media only screen and (max-width: 950px) {
-    .trainingPlans{
-        flex-direction: column;
-        align-items: center;
-    }
+  .trainingPlans {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }

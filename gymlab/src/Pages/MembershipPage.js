@@ -5,8 +5,12 @@ import Card from "../Components/MembershipPageComponents/Card";
 
 const MembershipPage = () => {
   return (
-    <div>
+    <div className="membershipPage">
       <SmallBanner title="Membership" />
+      <div className="introduction">
+        <h2 className="sectionHeading">Exclusive Pricing Plan</h2>
+        Unlock your full potential with our affordable gym membership plans! Enjoy unlimited access to state-of-the-art equipment, diverse fitness classes, and personalized training sessions. Sign up now and transform your fitness journey today!
+        </div>
       <div className="trainingPlans">
         <Card
           backgroundImg="Images/pricing-bg3.jpg"

@@ -8,19 +8,19 @@ const SideNav = (props) => {
 
   return (
     <div className={showSideNav ? "sideNav slide" : "sideNav"}>
-      <NavLink exact to="/" activeClassName="active" onClick={toggleSideNav}>
+      <NavLink exact to="/GymLab/" activeClassName="active" onClick={toggleSideNav}>
               <h2>Home</h2>
             </NavLink>
-            <NavLink to="/schedule" activeClassName="active" onClick={toggleSideNav}>
+            <NavLink to="/GymLab/schedule" activeClassName="active" onClick={toggleSideNav}>
               <h2>Schedule</h2>
             </NavLink>
-            <NavLink to="/membership" activeClassName="active" onClick={toggleSideNav}>
+            <NavLink to="/GymLab/membership" activeClassName="active" onClick={toggleSideNav}>
               <h2>Membership</h2>
             </NavLink>
-            <NavLink to="/about" activeClassName="active" onClick={toggleSideNav}>
+            <NavLink to="/GymLab/about" activeClassName="active" onClick={toggleSideNav}>
               <h2>About</h2>
             </NavLink>
-            <NavLink to="/contact" activeClassName="active" onClick={toggleSideNav}>
+            <NavLink to="/GymLab/contact" activeClassName="active" onClick={toggleSideNav}>
               <h2>Contact</h2>
             </NavLink>
 
